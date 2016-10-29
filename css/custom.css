@@ -1,0 +1,45 @@
+/* latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron-Light'), local('Orbitron-Regular'), url(https://fonts.gstatic.com/s/orbitron/v7/HmnHiRzvcnQr8CjBje6GQvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+  padding-top: 50px;
+}
+button {
+  margin: 10px;
+}
+.clock {
+  font-family: 'Orbitron', sans-serif;
+  color: red;
+  background: black;
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: maroon;
+}
+.balloon {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  background-image: url('../img/balloon.png');
+  display: none;
+  z-index: 7;
+}
+.balloon span {
+  font-size: 40px;
+  position: relative;
+  left: 110px;
+  top: 75px;
+  color: white;
+}
+.right {
+  float: right;
+}
+.red {
+  color: red;
+}

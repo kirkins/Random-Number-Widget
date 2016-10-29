@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Random Number Widget</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Random Number Widget</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Documentation</a></li>
+              <li class="active"><a href="example.html">Example</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <div class="container">
+        <div class="content">
+          <br/>
+
+          <div class="progress">
+            <div id="gameTime" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%"></div>
+          </div>
+
+          <div id="instructions"> <div class="well">
+            <h3>Balloon Example</h3>
+            <p>The following is an example of making a custom skin for the Random Number Widget component. It isn't a full working game just a sample of advanced CSS/JS extension of the class.</p>
+            <p>Each balloon is a div of class 'randomNum' & 'balloon'. Inside the div is a span of class 'randomNode' with the balloon set as it's master. This means clicking the balloon changes the number. The code for each balloon is as follows, with a unique id for each isntance: </p>
+            <code>&lt;div id="b1" class="randomNum balloon" min="1" max="99"&gt;</code></br>
+              <code>&lt;span class="randomNode" master="b1">?&lt;/span&gt;</code></br>
+            <code>&lt;/div&gt;</code>
+            </br></br>
+            <p>Behaviour for balloons is defined example.js and custom style for the balloon class is in custom.css</p>
+            <p>Note: works in IE but best in Chrome or Firefox.</p>
+          </div></div>
+
+          <button id="startButton" class="right">Click Balloons!</button>
+
+          <div id="b1" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b1">P</span>
+          </div>
+
+          <div id="b2" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b2">H</span>
+          </div>
+
+          <div id="b3" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b3">I</span>
+          </div>
+
+          <div id="b4" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b4">L</span>
+          </div>
+
+          <div id="b5" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b5">I</span>
+          </div>
+
+          <div id="b6" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b6">P</span>
+          </div>
+
+          <div id="b7" class="randomNum balloon" min="1" max="99">
+            <span class="randomNode" master="b7">!</span>
+          </div>
+
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/example.js"></script>
+      <script src="js/rng.js"></script>
+    </body>
+</html>
