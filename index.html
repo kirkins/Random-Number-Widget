@@ -34,11 +34,11 @@
       </nav>
       <div class="container">
         <div class="content">
-          <br/>
+          <br>
           <h3>Random Number Widget</h3>
           <p>Random Number Widget allows you to easily generate random numbers between two values.</p>
           <p>This component requires a minimum of two elements. An element to act as a button, and at least one other element to populate with the randomly generated number.</p>
-          <br/>
+          <br>
 
           <h4>Simple usage</h4>
           <p>Proper use of the Random Number Widget class requires the setting of a min and max value. Where 'min' specifies the minimum value of the of the random number to be returned and 'max' the maximum value:</p>
@@ -46,7 +46,7 @@
           <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question1""&gt;?&lt;/span&gt;</code><br/>
           <button id="question1" class="randomNum" min="1" max="100">try</button>
           <span>X = </span><span class="randomNode" master="question1">?</span>
-          <br/><br/>
+          <br><br>
 
           <h4>Decimals</h4>
           <p>The class also works with decimal points:</p>
@@ -54,7 +54,7 @@
           <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question2""&gt;?&lt;/span&gt;</code><br/>
           <button id="question2" class="randomNum" min="0.001" max="0.9">try</button>
           <span>X = </span><span class="randomNode" master="question2">?</span>
-          <br/><br/>
+          <br><br>
 
           <h4>Specify decimal places directly</h4>
           <p>We can also leave the decimal place open to specify decimal places. For example a min of 1.0000, acts like 1 but returns 4 decimals, try it:</p>
@@ -62,7 +62,7 @@
           <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question3"&gt;?&lt;/span&gt;</code><br/>
           <button id="question3" class="randomNum" min="1.0000" max="10">try</button>
           <span>X = </span><span class="randomNode" master="question3">?</span>
-          <br/><br/>
+          <br><br>
 
           <h4>Two nodes for one random</h4>
           <p>In some cases you may want to use a single random variable in multiple places. For example given 'X = Y * 5 + Y' we could set Y in both places: </p>
@@ -71,25 +71,25 @@
           <code>&lt;span&gt; * 5 + &lt;/span&gt;&lt;span class="randomNode" master="question4"&gt;Y&lt;/span&gt;</code><br/>
           <button id="question4" class="randomNum" min="1" max="10">try</button>
           <span>X = </span><span class="randomNode" master="question4">Y</span><span> * 5 + </span><span class="randomNode" master="question4">Y</span>
-          <br/><br/>
+          <br><br>
 
           <h4>Unlmited nodes</h4>
           <p>As you might have quessed there is no limit to nodes: </p>
-          <code>&lt;button id="question5" class="randomNum" min="1" max="10"&gt;try&lt;/button&gt;</code><br/>
-          <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code></br>
-          <code>&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code></br>
-          <code>&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code></br>
-          <code>&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code></br>          <button id="question5" class="randomNum" min="1" max="10">try</button>
+          <code>&lt;button id="question5" class="randomNum" min="1" max="10"&gt;try&lt;/button&gt;</code><br>
+          <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code><br>
+          <code>&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code><br>
+          <code>&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code><br>
+          <code>&lt;span class="randomNode" master="question5"&gt;?&lt;/span&gt;</code><br>          <button id="question5" class="randomNum" min="1" max="10">try</button>
           <span>X = </span><span class="randomNode" master="question5">?</span><span class="randomNode" master="question5">?</span><span class="randomNode" master="question5">?</span><span class="randomNode" master="question5">?</span>
-          <br/><br/>
+          <br><br>
 
           <h4>Bootstrap Skins</h4>
           <p>The random number generator's components can be applied to any element and thus can easily use bootstrap skins. The following is a simple example: </p>
-          <code>(long code sample see Bootstrap docs for use of default bootstrap styles)</code><br/>
+          <code>(long code sample see Bootstrap docs for use of default bootstrap styles)</code><br>
           <button id="question6" type="button" class="randomNum btn btn-default btn-lg" min="100" max="1000">
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Bonus!
           </button>
-          <br/><br/>
+          <br><br>
           <div class="well">
             <span class="label label-default"><span>X =</span><span class="randomNode" master="question6">?</span></span>
             <span class="label label-primary"><span>X =</span><span class="randomNode" master="question6">?</span></span>
@@ -101,36 +101,36 @@
 
           <h4>Self as node</h4>
           <p>These classes can be added to nearly any element. Here is an example of using a button as both the random number generator and the 'randomNode': </p>
-          <code>&lt;button id="question7" class="randomNum randomNode" min="1" max="100" master="question7"&gt;try&lt;/button&gt;</code><br/>
+          <code>&lt;button id="question7" class="randomNum randomNode" min="1" max="100" master="question7"&gt;try&lt;/button&gt;</code><br>
           <button id="question7" class="randomNum randomNode" min="1" max="100" master="question7">try</button>
-          <br/><br/>
+          <br><br>
 
           <h4>Error handling</h4>
           <p>Below we have an example where developer forgot to specify a min value and another example where min is set to puppies: </p>
-          <code>&lt;button id="question8" class="randomNum randomNode" max="100" master="question7"&gt;try&lt;/button&gt;</code><br/>
-          <code>&lt;button id="question8" class="randomNum randomNode" min="puppies" max="100" master="question7"&gt;try&lt;/button&gt;</code><br/>
+          <code>&lt;button id="question8" class="randomNum randomNode" max="100" master="question7"&gt;try&lt;/button&gt;</code><br>
+          <code>&lt;button id="question8" class="randomNum randomNode" min="puppies" max="100" master="question7"&gt;try&lt;/button&gt;</code><br>
           <button id="question8" class="randomNum randomNode" max="100">try</button>
           <button id="question9" class="randomNum randomNode" min="puppies" max="100">try</button>
-          <br/><br/>
+          <br><br>
 
           <h4>Custom Skin</h4>
           <p>Skins can be added by including an extra class such as 'clock' to the text we want styled:</p>
-          <code>&lt;button id="question10" class="randomNum" min="1" max="100"&gt;num&lt;/button&gt;</code><br/>
-          <code>&lt;span class="clock"&gt;</code></br>
-            <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question10"&gt;?&lt;/span&gt;</code></br>
-          <code>&lt;/span&gt;</code></br>
+          <code>&lt;button id="question10" class="randomNum" min="1" max="100"&gt;num&lt;/button&gt;</code><br>
+          <code>&lt;span class="clock"&gt;</code><br>
+            <code>&lt;span&gt;X = &lt;/span&gt;&lt;span class="randomNode" master="question10"&gt;?&lt;/span&gt;</code><br>
+          <code>&lt;/span&gt;</code><br>
           <button id="question10" class="randomNum" min="1" max="100">try</button>
           <span class="clock">
             <span>X = </span><span class="randomNode" master="question10">?</span>
           </span>
-          <br/><br/>
+          <br><br>
 
           <h4>Advanced Skins</h4>
           <p>We can also provide custom skins for these components. Click play to go to a custom skin example: </p>
           <a class="btn btn-default btn-lg" href="example.html">
             <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Goto sample
           </a>
-          <br/><br/>
+          <br><br>
 
         </div>
       </div>
